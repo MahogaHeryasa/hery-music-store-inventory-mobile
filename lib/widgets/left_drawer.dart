@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hery_music_store_inventory/screens/item_page.dart';
 import 'package:hery_music_store_inventory/screens/menu.dart';
 import 'package:hery_music_store_inventory/screens/item_form.dart';
+import 'package:hery_music_store_inventory/screens/list_item.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -61,7 +62,6 @@ class LeftDrawer extends StatelessWidget {
                   ));
             },
           ),
-          //BONUS
           ListTile(
             leading: const Icon(Icons.format_list_bulleted),
             title: const Text('Lihat Item'),
@@ -70,6 +70,18 @@ class LeftDrawer extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const ItemPage(),
+                  ));
+            },
+          ),
+          //BONUS
+          ListTile(
+            leading: const Icon(Icons.format_list_bulleted),
+            title: const Text('Lihat Item BONUS'),
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ItemPageBonus(),
                   ));
             },
           ),

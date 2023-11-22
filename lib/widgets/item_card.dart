@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hery_music_store_inventory/models/item_model.dart';
 
 class ItemCard extends StatelessWidget {
-  final Item item;
+  final ItemBonus item;
 
   const ItemCard(this.item, {super.key});
 

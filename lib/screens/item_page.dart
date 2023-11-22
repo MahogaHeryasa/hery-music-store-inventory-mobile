@@ -4,8 +4,8 @@ import 'package:hery_music_store_inventory/models/item_model.dart';
 import 'package:hery_music_store_inventory/widgets/item_card.dart';
 import 'package:hery_music_store_inventory/widgets/left_drawer.dart';
 
-class ItemPage extends StatelessWidget {
-  const ItemPage({super.key});
+class ItemPageBonus extends StatelessWidget {
+  const ItemPageBonus({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class ItemPage extends StatelessWidget {
                 mainAxisSpacing: 10,
                 crossAxisCount: 1,
                 shrinkWrap: true,
-                children: Item.items.map((Item item) {
+                children: ItemBonus.items.map((ItemBonus item) {
                   return ItemCard(item);
                 }).toList(),
               ),

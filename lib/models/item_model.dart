@@ -1,11 +1,11 @@
-class Item {
+class ItemBonus {
   final String name;
   final int price;
   final int amount;
   final String description;
-  static List<Item> items = [];
+  static List<ItemBonus> items = [];
 
-  Item({
+  ItemBonus({
     required this.name,
     required this.price,
     required this.description,
